@@ -5,7 +5,8 @@ body, html {
   width: 100%;
   height: 100%;
   font-size: 16px;
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
+  background: #eee;
 }
 
 h1, h2, h3, h4, h5 {
@@ -22,26 +23,33 @@ ul {
   margin: 0;
 }
 .header, .content, .nav {
-	max-width: 1000px;
+	max-width: 1280px;
 	margin: 0 auto;
+}
+.content {
+	-webkit-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.56);
+	-moz-box-shadow:    0px 1px 6px 0px rgba(50, 50, 50, 0.56);
+	box-shadow:         0px 1px 6px 0px rgba(50, 50, 50, 0.56);
+	background: #fff;
 }
 /* Header Content */
 .header {
 	margin: 0 auto;
 	display: block;
-	border-bottom: 4px solid #d90000;
-	padding: 20px 10px 10px;
+	padding: 10px 10px 10px;
+	border-bottom: 4px solid #b20000;
 }
 .header-logo {
 	float: left;
 	width: 115px;
+	margin-top: 2%;
 }
 .header h1,
 .header p {
 	text-align: right;
 }
 .header h1 {
-	font-weight: 100;
+	font-weight: bold;
 	margin: 0;
 	padding: 0;
 	font-size: 2.5em;
@@ -51,7 +59,35 @@ ul {
 	margin: 0;
 	font-size: 1em;
 	padding-bottom: 20px;
-	margin-top: 8px;
+	margin-top: 1%;
+}
+/* Navigation */
+.nav {
+	display: block;
+	overflow: hidden;
+}
+.nav-list {
+	min-height: 42px;
+	background: #d90000;
+}
+.nav-item {
+	box-sizing: border-box;
+  	display: inline-block;
+	float:left;
+	width: 25%;
+	display: block;
+	line-height: 32px;
+}
+.nav-item a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	min-height: 32px;
+	padding: 2% 5%;
+	text-align: center;
+}
+.nav-item a:hover {
+	background: #b20000;
 }
 /* Main Content */
 .content {
@@ -60,23 +96,50 @@ ul {
 .hero img {
 	width: 100%;
 }
-/* Featured Work / Projects */
-.projects {
-	font-family: "Roboto";
+.description {
+	font-size: 26px;
+	padding: 2% 10%;
+	text-align: center;
 }
+.description em {
+	font-size: 46px;
+}
+.description strong {
+	color: #D80000;
+	display: block;
+}
+a.header-menu {
+	display: block;
+}
+/* Featured Work Title Alternative */
+.my-message {
+	padding: 4% 5%;
+	margin-top: 6%;
+	text-align: center;
+}
+/* Featured Work / Projects */
 .projects h2 {
-	color: #bcbbbb;
-	margin: 30px 0 10px 18px;
+	color: #d80000;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.projects h3 {
+	color: #d80000;
 	font-size: 2.2em;
 	font-weight: 300;
+	letter-spacing: -1px;
+}
+.project {
+	font-family: Arial, Sans-serif;
 }
 .project {
 	float: left;
-	width: 30.3333333%;
-	text-align: center;
+	width: 26.3333333%;
 	margin-right: 4.5%;
 	overflow: hidden;
 	color: #666756;
+
 }
 .project a {
 	text-decoration: none;
@@ -86,8 +149,8 @@ ul {
 	width: 100%;
 }
 .project h3 {
-	font-size: 2.5em;
-	font-weight: 400;
+	font-size: 1.8em;
+	font-weight: bold;
 	margin-top: 15px;
 }
 .last {
