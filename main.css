@@ -36,7 +36,6 @@ ul {
 	-webkit-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.56);
 	-moz-box-shadow:    0px 1px 6px 0px rgba(50, 50, 50, 0.56);
 	box-shadow:         0px 1px 6px 0px rgba(50, 50, 50, 0.56);
-	padding-bottom: 60px;
 }
 
 /*
@@ -130,6 +129,7 @@ Main Content
 	background: url('images/image01.jpg') center bottom no-repeat;
 	background-size: cover;
 	width: 100%;
+	max-height: 33%;
 }
 
 .description {
@@ -217,24 +217,4 @@ Featured Work / Projects
 
 .project p {
 	min-height: 108px;
-}
-
-/*
-
-Footer
-
-*/
-
-.footer {
-	background: #d90000;
-	text-align: center;
-	color: #fff;
-	display: block;
-	margin-top: -30px;
-	height: 30px;
-}
-.footer p {
-	font-size: 16px;
-	font-family: Arial, Sans-serif;
-	padding-top: 10px;
 }
