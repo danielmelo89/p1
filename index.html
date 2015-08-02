@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Jane Doette | Portfolio</title>
+	<title>Daniel M. Melo | Portfolio</title>
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="responsive.css">
@@ -11,8 +11,8 @@
 <body>
 	<header class="header">
 		<img class="header-logo" src="images/logo.svg" alt="Udacity Logo">
-		<h1>Daniel M. Melo</h1>
-		<p>Front-End Developer</p>
+		<h1 class="header-title">Daniel M. Melo</h1>
+		<p class="header-description">Front-End Developer</p>
 		<a id="menu" class="header-menu">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
@@ -32,46 +32,33 @@
 	<main>
 		<section class="content">
 			<section class="hero">
-				<img src="images/image01.jpg" alt="Developer Code">
-				<article class="description">It’s <em>all</em> about the
-					<strong>USER EXPERIENCE.</strong>
-				</article>
-			</section>
-
-			<section class="page-info">
-				<article class="my-message">
+				<article class="page-info">
 					<p>
 						Hi, my name is <strong>Daniel Melo</strong> and I want to become a <em>ninja</em> Front-end Developer with the help of Udacity. Check out my fetured work bellow and see if I am getting there.
 					</p>
 				</article>
 			</section>
-
 			<section class="projects">
 			<h2>Featured Work</h2>
-				<ul>
-					<li class="project">
-						<img src="images/image02.png" alt="About Me - Project Image">
+				<article class="project">
+						<img src="images/image02.png" srcset="images/image02-1.png 1x, images/image02.png 2x" alt="About Me - Project Image">
 						<h3>About Me</h3>
-						<p>Also known as Project 0, the About Me page is the start of a journey of a lot of learning and experimenting!</p>
-						<a href="https://github.com/danielmelo89/p0-about-me-udacity/" target="_blank">View on Github</a>
-					</li>
-					<li class="project image-right">
-						<img src="images/image03.png" alt="Tag House - Project Image">
+						<p>Also known as Project 0, the About Me page is the start of a journey of a lot of learning and experimenting! <a href="https://github.com/danielmelo89/p0-about-me-udacity/" target="_blank">View on Github</a></p>
+					</article>
+					<article class="project image-right">
+						<img src="images/image03.png" srcset="images/image03-1.png 1x, images/image03.png 2x" alt="Tag House - Project Image">
 						<h3>Tag House</h3>
-						<p>This is my actual company’s website. I know it has a lot to improve, that’s one of the reasons I am here in Udacity!</p>
-						<a href="http://tag.house/" target="_blank">Visit Website</a>
-					</li>
-					<li class="project last">
-						<img src="images/image04.png" alt="Vetlink - Project Image">
+						<p>This is my actual company’s website. It has a lot to improve, good that I am here in Udacity! <a href="http://tag.house/" target="_blank">Visit Website</a></p>
+					</article>
+					<article class="project last">
+						<img src="images/image04.png" srcset="images/image04-1.png 1x, images/image04.png 2x" alt="Vetlink - Project Image">
 						<h3>Vetlink</h3>
-						<p>Is a software developed to help veterinarians manage their practices.</p>
-						<a href="http://vetlink.com.br/">Visit Website</a>
-					</li>
-				</ul>
+						<p>Is a software developed to help veterinarians manage their practices. <a href="http://vetlink.com.br/">Visit Website</a></p>
+					</article>
 			</section>
 		</section>
-	<footer>
-		© 2015 – Daniel Melo
+	<footer class="footer">
+		<p>© 2015</p>
 	</footer>
 	</main>
 	    <script>
