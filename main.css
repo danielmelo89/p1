@@ -60,7 +60,7 @@ Header Content
 .header {
 	margin: 0 auto;
 	display: block;
-	padding: 10px 10px 10px;
+	padding: 10px;
 	border-bottom: 4px solid #b20000;
 }
 
@@ -168,7 +168,7 @@ Featured Work / Projects
 
 */
 
-.projects h2 {
+.projects-title {
 	color: #d80000;
 	font-style: italic;
 	text-align: center;
@@ -176,10 +176,13 @@ Featured Work / Projects
 	font-size: 2em;
 }
 
-.projects h3 {
+.project-title {
 	color: #d80000;
 	font: 1.5em "Playfair Display", Serif;
 	font-weight: 300;
+	font-size: 1.8em;
+	font-weight: bold;
+	margin: 15px 0 0 0;
 }
 
 .project {
@@ -195,21 +198,14 @@ Featured Work / Projects
 	text-align: center;
 }
 
-.project a {
+.project-link {
 	text-decoration: none;
 	color: #d90000;
 }
 
-.project img {
+.project-image {
 	width: 100%;
 }
-
-.project h3 {
-	font-size: 1.8em;
-	font-weight: bold;
-	margin: 15px 0 0 0;
-}
-
-.project p {
+.project-description {
 	min-height: 108px;
 }
