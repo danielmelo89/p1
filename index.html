@@ -5,43 +5,44 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Daniel M. Melo | Portfolio</title>
-	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-	<header class="header">
-		<img class="header-logo" src="images/logo.svg" alt="Udacity Logo">
-		<h1 class="header-title">Daniel M. Melo</h1>
-		<p class="header-description">Front-End Developer</p>
-		<a id="menu" class="header-menu">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-          </svg>
-        </a>
-	</header>
+	<div class="container">
+		<header class="header">
+			<img class="header-logo" src="images/logo.svg" alt="Udacity Logo">
+			<h1 class="header-title">Daniel M. Melo</h1>
+			<p class="header-description">Front-End Developer</p>
+			<a id="menu" class="header-menu">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+				</svg>
+			</a>
+		</header>
 
-    <nav id="drawer" class="nav">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#">Home</a></li>
-        <li class="nav-item"><a href="#">Portfolio</a></li>
-        <li class="nav-item"><a href="#">Blog</a></li>
-        <li class="nav-item"><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+		<nav id="drawer" class="nav">
+			<ul class="nav-list">
+				<li class="nav-item"><a href="#">Home</a></li>
+				<li class="nav-item"><a href="#">Portfolio</a></li>
+				<li class="nav-item"><a href="#">Blog</a></li>
+				<li class="nav-item"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
 
-	<main>
-		<section class="content">
-			<section class="hero">
-				<article class="page-info">
-					<p>
-						Hi, my name is <strong>Daniel Melo</strong> and I want to become a <em>ninja</em> Front-end Developer with the help of Udacity. Check out my fetured work bellow and see if I am getting there.
-					</p>
-				</article>
-			</section>
-			<section class="projects">
-			<h2>Featured Work</h2>
-				<article class="project">
+		<main>
+			<section class="content">
+				<section class="hero">
+					<article class="page-info">
+						<p>
+							Hi, my name is <strong>Daniel Melo</strong> and I want to become a <em>ninja</em> Front-end Developer with the help of Udacity. Check out my fetured work bellow and see if I am getting there.
+						</p>
+					</article>
+				</section>
+				<section class="projects">
+					<h2>Featured Work</h2>
+					<article class="project">
 						<img src="images/image02.png" srcset="images/image02-1.png 1x, images/image02.png 2x" alt="About Me - Project Image">
 						<h3>About Me</h3>
 						<p>Also known as Project 0, the About Me page is the start of a journey of a lot of learning and experimenting! <a href="https://github.com/danielmelo89/p0-about-me-udacity/" target="_blank">View on Github</a></p>
@@ -56,25 +57,10 @@
 						<h3>Vetlink</h3>
 						<p>Is a software developed to help veterinarians manage their practices. <a href="http://vetlink.com.br/">Visit Website</a></p>
 					</article>
+				</section>
 			</section>
-		</section>
-	</main>
-	    <script>
-      /*
-       * Open the drawer when the menu ison is clicked.
-       */
-      var menu = document.querySelector('#menu');
-      var main = document.querySelector('main');
-      var drawer = document.querySelector('.nav');
-
-      menu.addEventListener('click', function(e) {
-        drawer.classList.toggle('open');
-        e.stopPropagation();
-      });
-      main.addEventListener('click', function() {
-        drawer.classList.remove('open');
-      });
-
-    </script>
+		</main>
+	</div>
+	<script src="menu.js"></script>
 </body>
 </html>
